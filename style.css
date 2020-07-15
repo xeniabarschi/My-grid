@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(216, 212, 212);
+    
+}
+section {
+    background-color: rgb(216, 212, 212);
+    width: calc(100vw - 2 * 8px);
+    height: calc(100vh - 2 * 8px);
+
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-template-areas: 
+    " h h h "
+    " p s th"
+    " p s th"
+    " p s th";
+}
+section header {
+    grid-area: h;
+    
+}
+header img {
+    width: calc(100vw - 2%);
+    height: 75vh;
+}
+   div img {
+       width: 95%;
+       height: 70vh;
+       vertical-align: middle;
+       padding-top: 1em;
+   }
+section div:nth-child(1){
+    grid-area: p;
+    width: 30vw;
+   
+}
+section div:nth-child(2){
+    grid-area: s;
+    
+}
+section div:nth-child(3){
+    grid-area: th;
+    
+}
